@@ -1,0 +1,16 @@
+Script started on Sat 07 Sep 2019 12:34:02 PM PDT
+[chavezan@athena:1]> gcc lab1.c
+[chavezan@athena:2]> a.out
+
+Lab 1. 
+
+Hello World.
+Hi, Anthony Chavez.
+
+No! Try not! Do or do not, there is no try.
+- Yoda
+
+[chavezan@athena:3]> exit
+exit
+
+Script done on Sat 07 Sep 2019 12:34:42 PM PDT

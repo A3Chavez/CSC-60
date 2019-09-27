@@ -1,0 +1,23 @@
+Script started on Fri 27 Sep 2019 08:14:26 AM PDT
+[chavezan@athena:21]> gcc lab3.c
+[chavezan@athena:22]> a.out
+
+Anthony Chavez. Lab 3.
+
+Jane went to the store.
+
+My friend is 22 years old. 
+
+"So many books, so little time."
+- Frank Zappa
+
+The average = 246.2
+
+The average = 246.237
+
+The average = 2.46e+02
+
+[chavezan@athena:23]> exit
+exit
+
+Script done on Fri 27 Sep 2019 08:14:48 AM PDT

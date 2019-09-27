@@ -1,0 +1,218 @@
+Script started on Sun 15 Sep 2019 06:43:22 PM PDT
+[chavezan@sp1:11]> history -c
+[chavezan@sp1:12]> cd csc60
+[chavezan@sp1:13]> mkdirl[K lab2
+[chavezan@sp1:14]> cd lab2
+[chavezan@sp1:15]> pwd
+/gaia/class/student/chavezan/csc60/lab2
+[chavezan@sp1:16]> mkdir aaa
+[chavezan@sp1:17]> cd aaa
+[chavezan@sp1:18]> pwd
+/gaia/class/student/chavezan/csc60/lab2/aaa
+[chavezan@sp1:19]> cd ..
+[chavezan@sp1:20]> pwd
+/gaia/class/student/chavezan/csc60/lab2
+[chavezan@sp1:21]> ls > file1
+[chavezan@sp1:22]> cat file1
+aaa/
+file1
+[chavezan@sp1:23]> less file1
+[?1049h[?1h=aaa/
+file1
+[7mfile1 (END) [27m[K[K[?1l>[?1049l[chavezan@sp1:24]> file *
+aaa:   setgid directory
+file1: ASCII text
+[chavezan@sp1:25]> wc file1
+ 2  2 11 file1
+[chavezan@sp1:26]> wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      11 file1
+      2       2      11 total
+[chavezan@sp1:27]> grep lab file1
+[chavezan@sp1:28]> cp file1 file2
+[chavezan@sp1:29]> ls
+aaa/  file1  file2
+[chavezan@sp1:30]> cd aaa
+[chavezan@sp1:31]> cp ../file1
+cp: missing destination file operand after `../file1'
+Try `cp --help' for more information.
+[chavezan@sp1:32]> ls
+[chavezan@sp1:33]> cp ../file1 .
+[chavezan@sp1:34]> ls
+file1
+[chavezan@sp1:35]> mv file1 file2
+[chavezan@sp1:36]> ls
+file2
+[chavezan@sp1:37]> mv ../file1 .
+[chavezan@sp1:38]> cd ..
+[chavezan@sp1:39]> ls
+aaa/  file2
+[chavezan@sp1:40]> cd aaa
+[chavezan@sp1:41]> ls
+file1  file2
+[chavezan@sp1:42]> cmp file1 file2
+[chavezan@sp1:43]> ls > aaalist
+[chavezan@sp1:44]> cmp file1 aaalist
+file1 aaalist differ: byte 4, line 1
+[chavezan@sp1:45]> diff file1 aaalist
+1c1
+< aaa/
+---
+> aaalist
+2a3
+> file2
+[chavezan@sp1:46]> rm file1
+[chavezan@sp1:47]> ls
+aaalist  file2
+[chavezan@sp1:48]> ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+chavezan 10551  0.0  0.0 116748  2032 pts/0    Ss   18:42   0:00 -csh
+chavezan 10619  0.0  0.0 107132   828 pts/0    S+   18:43   0:00 script AnthonyChavez_lab2.txt
+chavezan 10621  0.0  0.0 107644   400 pts/0    S+   18:43   0:00 script AnthonyChavez_lab2.txt
+chavezan 10622  0.0  0.0 110380  1796 pts/1    Ss   18:43   0:00 -sh -i
+chavezan 10838  0.0  0.0 114492  1276 pts/1    R+   18:50   0:00 ps u
+[chavezan@sp1:49]> ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  4756 10622 10621  0  80   0 - 27595 sys_rt pts/1    00:00:00 csh
+0 R  4756 10878 10622  0  80   0 - 27036 -      pts/1    00:00:00 ps
+[chavezan@sp1:50]> !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  4756 10622 10621  0  80   0 - 27595 sys_rt pts/1    00:00:00 csh
+0 R  4756 10881 10622  0  80   0 - 27037 -      pts/1    00:00:00 ps
+[chavezan@sp1:51]> history
+    12	18:44	cd csc60
+    13	18:44	mkdir lab2
+    14	18:44	cd lab2
+    16	18:44	mkdir aaa
+    20	18:45	pwd
+    21	18:45	ls > file1
+    22	18:45	cat file1
+    23	18:45	less file1
+    24	18:46	file *
+    25	18:46	wc file1
+    26	18:46	wc *
+    27	18:46	grep lab file1
+    28	18:46	cp file1 file2
+    31	18:47	cp ../file1
+    33	18:48	cp ../file1 .
+    35	18:48	mv file1 file2
+    37	18:49	mv ../file1 .
+    38	18:49	cd ..
+    40	18:49	cd aaa
+    42	18:49	cmp file1 file2
+    43	18:49	ls > aaalist
+    44	18:50	cmp file1 aaalist
+    45	18:50	diff file1 aaalist
+    46	18:50	rm file1
+    47	18:50	ls
+    48	18:50	ps u
+    50	18:51	ps -l
+    51	18:51	history
+[chavezan@sp1:52]> cd ..
+[chavezan@sp1:53]> cd ..
+[chavezan@sp1:54]> pwd
+/gaia/class/student/chavezan/csc60
+[chavezan@sp1:55]> cd lab1
+[chavezan@sp1:56]> head lab1.c
+/*------------------*/
+/* Anthony Chavez   */
+/* Lab 1            */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    printf("\nLab 1. \n\n");
+    printf("Hello World.\n");
+[chavezan@sp1:57]> q
+q: Command not found.
+[chavezan@sp1:58]> history
+    12	18:44	cd csc60
+    13	18:44	mkdir lab2
+    14	18:44	cd lab2
+    16	18:44	mkdir aaa
+    21	18:45	ls > file1
+    22	18:45	cat file1
+    23	18:45	less file1
+    24	18:46	file *
+    25	18:46	wc file1
+    26	18:46	wc *
+    27	18:46	grep lab file1
+    28	18:46	cp file1 file2
+    31	18:47	cp ../file1
+    33	18:48	cp ../file1 .
+    35	18:48	mv file1 file2
+    37	18:49	mv ../file1 .
+    40	18:49	cd aaa
+    42	18:49	cmp file1 file2
+    43	18:49	ls > aaalist
+    44	18:50	cmp file1 aaalist
+    45	18:50	diff file1 aaalist
+    46	18:50	rm file1
+    47	18:50	ls
+    48	18:50	ps u
+    50	18:51	ps -l
+    53	18:52	cd ..
+    54	18:52	pwd
+    55	18:52	cd lab1
+    56	18:52	head lab1.c
+    57	18:53	q
+    58	18:53	history
+[chavezan@sp1:59]> tail lab1.c
+int main(void) {
+    printf("\nLab 1. \n\n");
+    printf("Hello World.\n");
+    printf("Hi, Anthony Chavez.\n\n");
+    printf("No! Try not! Do or do not, there is no try.\n");
+    printf("- Yoda\n\n");
+
+    return EXIT_SUCCESS;
+}
+/*------------------*/
+[chavezan@sp1:60]> ls -al | less
+[?1049h[?1h=total 24
+drwx--S--- 2 chavezan stdcpe 4096 Sep  7 12:34 ./
+drwx--S--- 4 chavezan stdcpe 4096 Sep 15 18:44 ../
+-rw------- 1 chavezan stdcpe  300 Sep  7 12:34 AnthonyChavez_lab1.txt
+-rwx------ 1 chavezan stdcpe 4774 Sep  7 12:34 a.out*
+-rw------- 1 chavezan stdcpe  363 Sep  7 12:32 lab1.c
+[7m(END) [27m[K[K[?1l>[?1049l[chavezan@sp1:61]> history
+    12	18:44	cd csc60
+    13	18:44	mkdir lab2
+    14	18:44	cd lab2
+    16	18:44	mkdir aaa
+    21	18:45	ls > file1
+    22	18:45	cat file1
+    23	18:45	less file1
+    24	18:46	file *
+    25	18:46	wc file1
+    26	18:46	wc *
+    27	18:46	grep lab file1
+    28	18:46	cp file1 file2
+    31	18:47	cp ../file1
+    33	18:48	cp ../file1 .
+    35	18:48	mv file1 file2
+    37	18:49	mv ../file1 .
+    40	18:49	cd aaa
+    42	18:49	cmp file1 file2
+    43	18:49	ls > aaalist
+    44	18:50	cmp file1 aaalist
+    45	18:50	diff file1 aaalist
+    46	18:50	rm file1
+    47	18:50	ls
+    48	18:50	ps u
+    50	18:51	ps -l
+    53	18:52	cd ..
+    54	18:52	pwd
+    55	18:52	cd lab1
+    56	18:52	head lab1.c
+    57	18:53	q
+    59	18:54	tail lab1.c
+    60	18:54	ls -al | less
+    61	18:54	history
+[chavezan@sp1:62]> exit
+exit
+
+Script done on Sun 15 Sep 2019 06:54:55 PM PDT
