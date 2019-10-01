@@ -13,8 +13,8 @@ int main(void) {
 	printf("\nJane went to the store.\n");
 	printf("\nMy friend is %d years old. \n", age);
 	printf("\n\"So many books, so little time.\"\n- Frank Zappa\n");
-	printf("\nThe average = %.1f\n", average);
-	printf("\nThe average = %.3f\n", average);
+	printf("\nThe average = %5.1f\n", average);
+	printf("\nThe average = %7.3f\n", average);
 	printf("\nThe average = %.2e\n\n", average);
 
 	return EXIT_SUCCESS;
