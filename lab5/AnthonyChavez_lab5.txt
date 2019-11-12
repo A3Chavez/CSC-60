@@ -1,0 +1,22 @@
+Script started on Thu 10 Oct 2019 08:21:24 PM PDT
+[chavezan@athena:21]> touch lab5.h
+[chavezan@athena:22]> make
+make: `lab5' is up to date.
+[chavezan@athena:23]> lab5
+[chavezan@athena:24]> cat lab5.out
+
+Anthony Chavez.  Lab 5. 
+
+ Radius	    Area     Circumference  
+--------  --------  --------------- 
+   3.70     43.01        23.25  
+   6.80    145.27        42.73  
+   4.00     50.27        25.13  
+   5.60     98.52        35.19  
+  12.70    506.71        79.80  
+  45.60   6532.50       286.51  
+
+[chavezan@athena:25]> exit
+exit
+
+Script done on Thu 10 Oct 2019 08:22:18 PM PDT
