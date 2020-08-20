@@ -1,0 +1,41 @@
+Script started on Tue 12 Nov 2019 03:56:01 PM PST
+[chavezan@athena:21]> gcc lab9.c -Wall
+[chavezan@athena:22]> a.out
+csc60msh> 
+ARGC = 0
+csc60msh>  
+ARGC = 0
+csc60msh> pwd
+ARGC = 1
+ARGV 0 = pwd 
+Current Directory: /gaia/class/student/chavezan/csc60/lab9
+csc60msh> cd ..
+ARGC = 2
+ARGV 0 = cd 
+ARGV 1 = .. 
+csc60msh> pwd
+ARGC = 1
+ARGV 0 = pwd 
+Current Directory: /gaia/class/student/chavezan/csc60
+csc60msh> cd lab9
+ARGC = 2
+ARGV 0 = cd 
+ARGV 1 = lab9 
+csc60msh> pwd
+ARGC = 1
+ARGV 0 = pwd 
+Current Directory: /gaia/class/student/chavezan/csc60/lab9
+csc60msh> cd
+ARGC = 1
+ARGV 0 = cd 
+csc60msh> pwd
+ARGC = 1
+ARGV 0 = pwd 
+Current Directory: /gaia/class/student/chavezan
+csc60msh> exit
+ARGC = 1
+ARGV 0 = exit 
+[chavezan@athena:23]> exit
+exit
+
+Script done on Tue 12 Nov 2019 03:56:55 PM PST

@@ -1,0 +1,108 @@
+Script started on Wed 04 Dec 2019 02:34:24 PM PST
+[chavezan@sp2:21]> gcc lab10.c -Wall
+[chavezan@sp2:22]> a.out
+csc60msh> ls > lsout
+ARGC = 3
+ARGV 0 = ls 
+ARGV 1 = > 
+ARGV 2 = lsout 
+Child returned status: 0
+csc60msh> cat lsout
+ARGC = 2
+ARGV 0 = cat 
+ARGV 1 = lsout 
+AnthonyChavez_lab10.txt
+a.out
+execvp.c
+lab10.c
+lsout
+redir.c
+waitpid.c
+wcout
+Child returned status: 0
+csc60msh> ls > lsout > file1
+ARGC = 5
+ARGV 0 = ls 
+ARGV 1 = > 
+ARGV 2 = lsout 
+ARGV 3 = > 
+ARGV 4 = file1 
+No Command Error.
+Child returned status: 256
+csc60msh> cat foo.txt
+ARGC = 2
+ARGV 0 = cat 
+ARGV 1 = foo.txt 
+cat: foo.txt: No such file or directory
+Child returned status: 256
+csc60msh> > lsout
+ARGC = 2
+ARGV 0 = > 
+ARGV 1 = lsout 
+No command entered error.
+Child returned status: 256
+csc60msh> < lsout
+ARGC = 2
+ARGV 0 = < 
+ARGV 1 = lsout 
+No command entered error.
+Child returned status: 256
+csc60msh> wc < lsout
+ARGC = 3
+ARGV 0 = wc 
+ARGV 1 = < 
+ARGV 2 = lsout 
+ 8  8 77
+Child returned status: 0
+csc60msh> wc < lsout > wcout
+ARGC = 5
+ARGV 0 = wc 
+ARGV 1 = < 
+ARGV 2 = lsout 
+ARGV 3 = > 
+ARGV 4 = wcout 
+Child returned status: 0
+csc60msh> cat wcout
+ARGC = 2
+ARGV 0 = cat 
+ARGV 1 = wcout 
+ 8  8 77
+Child returned status: 0
+csc60msh> wc < lsout < wcout
+ARGC = 5
+ARGV 0 = wc 
+ARGV 1 = < 
+ARGV 2 = lsout 
+ARGV 3 = < 
+ARGV 4 = wcout 
+Cannot input from more than one file error.
+Child returned status: 256
+csc60msh> cd ../lab1
+ARGC = 2
+ARGV 0 = cd 
+ARGV 1 = ../lab1 
+csc60msh> gcc lab1.c
+ARGC = 2
+ARGV 0 = gcc 
+ARGV 1 = lab1.c 
+Child returned status: 0
+csc60msh> a.out
+ARGC = 1
+ARGV 0 = a.out 
+
+Lab 1. 
+
+Hello World.
+Hi, Anthony Chavez.
+
+No! Try not! Do or do not, there is no try.
+- Yoda
+
+Child returned status: 0
+csc60msh> exit
+ARGC = 1
+ARGV 0 = exit 
+[chavezan@sp2:23]> exit
+exit
+
+Script done on Wed 04 Dec 2019 02:38:38 PM PST
